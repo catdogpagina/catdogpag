@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Adopción de Perros y Gatos</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+
+    }
+  /* Estilos básicos para la barra de menú */
+.navbar {
+    background-color: #f763be; /* Color de fondo */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra el menú */
+}
+
+.navbar ul li {
+    display: inline; /* Pone los elementos en horizontal */
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+.navbar ul li a:hover {
+    color: #00fc86;
+}
+    header {
+     background-color: #ff97cb;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    .card p {
+      padding: 0 10px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 15px;
+      background-color: #5c9c09;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover {
+         background-color: #67bb5c;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+
+    }
+    .dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+    .submenu {
+  display: none; /* Oculto por defecto */
+  position: absolute; /* Flotante */
+}
+.submenu {
+    padding: 10px;           /* espacio interno */
+    background-color: #f763be; /* opcional, para que se vea mejor */
+}
+
+.submenu {
+    border-radius: 10px;     /* bordes redondeados */
+    padding: 10px;
+    background-color: #f763be; /* opcional, para que se vea mejor */
+    box-shadow: 0 10px 10px rgb(168, 5, 95); /* sombra */
+}
+.dropdown:hover .submenu {
+  display: block; /* Se muestra al hacer hover */
+}
+.dropdown { position: relative; }
+
+
+</style>
+
+  </style>
+</head>
+<body>
+  <header>
+  <h1>CATDOG 🐾</h1>
+  <p>Perros y gatos buscando un hogar</p>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown">
+            <a href="#">            Buscar...             </a>
+            <ul class="submenu">
+              <br>
+      <li><a href="#">           Color          </a></li>
+      <ul> </ul>
+      <ul>
+        <li><a href="#">          Raza          </a></li>
+      </ul>
+        <li><a href="#">          Edad          </a></li>
+      </ul>
+            <li>|</li>
+            <li><a href="DarEnAdopt.html">            Dar en Adopcion            </a></li>
+            <li>|</li>
+            <li><a href="#">            Nuestra informacion            </a></li>
+            <li>|</li>
+            <li><a href="#">            Registrarse            </a></li>
+            <li>|</li>
+            <li><a href="#">           ?           </a></li>
+        </ul>
+<br>
+        <ul>
+            <li><a href=>         G e n e r a l         </a></li>
+        </ul>    </nav>
+ </header>
+ <div class="container">  <div class="card">
+    <img src="perrito.jpg" alt="Perro">
+    <h3>Max</h3>
+    <p><info=>Perro juguetón, 2 años, muy amigable.</info></p>
+    <a href="Perrito1.html" class="btn" onclick="mostrar ('Max','| Edad: 2 años ','| Raza: Criollo')">Adoptar</a>
+  </div>  <div class="card">
+    <img src="gatitochiquito.jpg" alt="Gato">
+    <h3>Luna</h3>
+    <p>Gatita tranquila, 1 mes, le encanta dormir.</p>
+    <a href="luna.html" class="btn" onclick="mostrar('Luna','| Edad: 1 mes ','| Raza: Doméstica')">Adoptar</a>
+  </div>  <div class="card">
+    <img src="perrito2.jpg" alt="Perro">
+    <h3>Rocky</h3>
+    <p>Perro protector, 3 años, ideal para familia.</p>
+     <a href="Rocky.html" class="btn" onclick="mostrar ('Rocky','| Edad: 3 años ','| Raza: Domestico')">Adoptar</a>
+  </div>  <div class="card">
+    <img src="Gatito.jfif" alt="Gato">
+    <h3>Michi</h3>
+    <p>Gato curioso, 3 años, muy cariñoso.</p>
+    <a href="Michi.html" class="btn" onclick="mostrar ('Michi','| Edad: 3 años ','| Raza: Domestico')">Adoptar</a>
+  </div>
+</div>
+</body>
+</html>
